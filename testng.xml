@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="AllFinalProjectTests" verbose="1" >
+  <test name="RunAllFPTests" >
+    <classes>
+       <class name="tests.ProfileTest" />
+       <class name="tests.MealItemTest" />
+       <class name="tests.SearchTest" />
+    </classes>
+  </test>
+</suite>
