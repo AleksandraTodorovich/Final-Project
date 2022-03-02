@@ -59,9 +59,6 @@ public class MealItemTest extends BasicTest {
 		notificationSystemPage.waitForElementToDissapire();
 		locationPopupPage.getSelectLocation().click();
 		Thread.sleep(2000);
-		// locationPopupPage.setLocation("City Center - Albany"); //klik na "City Center
-		// - Albany" nije hteo da radi preko poziva ove metode, pa sam opet morala da
-		// idem peške
 		locationPopupPage.getKeyword().click();
 		locationPopupPage.getLocationInput();
 		locationPopupPage.getLocationItem("City Center - Albany").click();

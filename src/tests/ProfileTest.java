@@ -96,9 +96,6 @@ public class ProfileTest extends BasicTest{
 		select = new Select(profilePage.getCity());
 		select.selectByVisibleText("Worsley");
 		profilePage.getSave().click();
-//		Vlado kao što vidiš išla sam peške, nije uopšte hteo poziv metode iz Profile Page-a da radi, ne znam zašto. Menjala sam
-//		lokatore nista nije pomoglo, i na kraju samo ovako je htelo da radi. Ipak sam ostavila tu metodu i ovaj zakomentarisani deo, čisto da vidiš.
-//		profilePage.changeAllAccountData("Maureen", "McCartney", "Denton 123/4", " +447700900100", "08015", "United Kingdom", "Manchester", "Worsley");
 		Assert.assertEquals(notificationSystemPage.getMessage(), "Setup Successful", "Setup Unsuccessfull");
 		authPage.getMyAccountDropdown().click();
 		authPage.logOut();

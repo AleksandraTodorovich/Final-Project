@@ -114,7 +114,6 @@ public class ProfilePage extends BasicPage{
 
 	public void changeAllAccountData(String firstName, String lastName, String address, String phone, String zipCode,
 			String country, String state, String city) throws InterruptedException {
-		// ova metoda nije htela da se izvrsi u Profile Testu, pa sam sve pozivala posebno 
 		Select select = new Select(null);
 		Thread.sleep(2000);
 		this.getFirstName().clear();
